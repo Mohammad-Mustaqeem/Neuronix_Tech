@@ -1,0 +1,42 @@
+/* src/assets/styles/variables.css */
+:root {
+  /* === BACKGROUNDS === */
+  --bg: #04040a;
+  --bg2: #080810;
+  --bg3: #0c0c18;
+  --bg-card: rgba(8, 8, 16, 0.6);
+
+  /* === ACCENT COLORS === */
+  --cyan: #00e5ff;
+  --cyan2: #00b4cc;
+  --cyan-glow: rgba(0, 229, 255, 0.15);
+  --gold: #c9a227;
+
+  /* === TEXT === */
+  --text: #e8e8f0;
+  --text-muted: #6a6a80;
+  --text-dim: #3a3a50;
+
+  /* === BORDERS === */
+  --border: rgba(0, 229, 255, 0.12);
+  --border-hover: rgba(0, 229, 255, 0.3);
+
+  /* === TYPOGRAPHY === */
+  --font-head: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-tech: "Rajdhani", sans-serif;
+
+  /* === SPACING === */
+  --section-pad: 5rem 3rem;
+  --section-pad-sm: 4rem 1.5rem;
+
+  /* === TRANSITIONS === */
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.6s ease;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-pad: 4rem 1.5rem;
+  }
+}

@@ -1,0 +1,52 @@
+/* src/components/layout/Footer/Footer.module.css */
+.footer {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: var(--font-tech);
+  font-size: 1rem;
+  letter-spacing: 4px;
+  color: var(--cyan);
+  text-transform: uppercase;
+}
+.logo span { color: var(--text-muted); }
+
+.copy {
+  color: var(--text-muted);
+  font-family: var(--font-tech);
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  color: var(--text-muted);
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.link:hover { color: var(--cyan); }
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,65 @@
+/* src/pages/NotFoundPage.module.css */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 3rem;
+  max-width: 600px;
+}
+
+.code {
+  font-family: var(--font-head);
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 800;
+  color: rgba(0,229,255,0.07);
+  letter-spacing: -6px;
+  line-height: 1;
+  margin-bottom: -1rem;
+  user-select: none;
+}
+
+.tag {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: var(--cyan);
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .content { padding: 4rem 1.5rem; }
+}

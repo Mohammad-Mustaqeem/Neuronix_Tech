@@ -1,0 +1,78 @@
+/* src/components/ui/Button/Button.module.css */
+.btn {
+  font-family: var(--font-tech);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+/* Sizes */
+.sm { font-size: 0.75rem; padding: 0.6rem 1.5rem; }
+.md { font-size: 0.85rem; padding: 0.9rem 2.2rem; }
+.lg { font-size: 0.95rem; padding: 1.1rem 2.8rem; }
+
+/* Variants */
+.primary {
+  background: var(--cyan);
+  color: #04040a;
+}
+.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+.primary:hover::before { transform: translateX(100%); }
+.primary:hover {
+  background: #33ecff;
+  box-shadow: 0 0 30px rgba(0,229,255,0.4);
+}
+
+.outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.outline:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0,229,255,0.05);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text-muted);
+  padding-left: 0;
+  padding-right: 0;
+}
+.ghost:hover { color: var(--cyan); }
+
+/* Disabled */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(4,4,10,0.3);
+  border-top-color: #04040a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
